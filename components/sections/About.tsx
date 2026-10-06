@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { VennArt } from "@/components/art/Art";
 import { Eyebrow, Reveal, SplitHeading } from "@/components/ui/Reveal";
 import { MISSION, VALUES, VISION, WHY, accent } from "@/lib/content";
 
@@ -9,10 +10,13 @@ export default function About() {
     <section id="about" className="relative px-4 py-32 md:px-8 md:py-48">
       <div className="mx-auto max-w-7xl">
         <Eyebrow index="04">Why GenRise</Eyebrow>
-        <SplitHeading
-          lines={["Why teams", <span key="c" className="font-serif italic text-mute">choose GenRise.</span>]}
-          className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-8xl"
-        />
+        <div className="grid items-center gap-10 md:grid-cols-[1.4fr_1fr]">
+          <SplitHeading
+            lines={["Why teams", <span key="c" className="font-serif italic text-mute">choose GenRise.</span>]}
+            className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-8xl"
+          />
+          <VennArt className="mx-auto w-full max-w-[340px] text-paper" />
+        </div>
 
         <div className="mt-20 grid gap-4 md:grid-cols-6">
           {WHY.map((w, i) => (

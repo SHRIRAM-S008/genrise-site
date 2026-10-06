@@ -2,8 +2,18 @@
 
 import { motion, useScroll, useTransform, type MotionValue } from "motion/react";
 import { useRef } from "react";
+import { BuildArt, GrowArt, ScaleArt } from "@/components/art/Art";
 import { Eyebrow, SplitHeading } from "@/components/ui/Reveal";
 import { PILLARS } from "@/lib/content";
+
+function PillarArt({ i }: { i: number }) {
+  const Art = [BuildArt, GrowArt, ScaleArt][i % 3];
+  return (
+    <div className="-my-4 flex flex-1 items-center md:-mt-24 md:pl-[8%]">
+      <Art className="h-40 w-auto sm:h-48 md:h-60" />
+    </div>
+  );
+}
 
 function PillarCard({
   pillar,
@@ -34,6 +44,7 @@ function PillarCard({
           <span className="font-mono text-sm uppercase tracking-[0.2em] opacity-60">What we do</span>
           <span className="font-serif text-[22vw] leading-[0.7] opacity-90 md:text-[12rem]">{pillar.n}</span>
         </div>
+        <PillarArt i={i} />
         <div className="grid gap-6 md:grid-cols-[1fr_1fr] md:items-end">
           <h3 className="text-4xl font-medium leading-[0.95] tracking-[-0.04em] md:text-7xl">{pillar.title}</h3>
           <div>

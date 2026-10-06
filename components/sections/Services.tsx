@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+import { ServiceArt } from "@/components/art/Art";
 import { Eyebrow, Reveal, SplitHeading } from "@/components/ui/Reveal";
 import { ALSO_AVAILABLE, INCLUDED, SERVICES, accent } from "@/lib/content";
 
@@ -20,6 +21,7 @@ function ServiceCard({ s, i }: { s: (typeof SERVICES)[number]; i: number }) {
           {s.n}
         </span>
       </div>
+      <ServiceArt id={s.title} className="relative mx-auto h-28 w-auto text-paper/70 md:h-36" />
       <div className="relative">
         <h3 className="text-4xl font-medium leading-[0.95] tracking-[-0.03em] md:text-5xl">{s.title}</h3>
         <p className="mt-5 leading-relaxed text-paper/70">{s.body}</p>

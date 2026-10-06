@@ -193,6 +193,24 @@ html.lenis body {
   background-size: 22px 22px;
 }
 
+/* 2D art idle motion */
+.art-float {
+  animation: art-float 4s ease-in-out infinite;
+}
+@keyframes art-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(var(--amp, -6px)); }
+}
+.art-spin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: art-spin 6s ease-in-out infinite;
+}
+@keyframes art-spin {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(90deg); }
+}
+
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -210,6 +228,8 @@ html.lenis body {
 @media (prefers-reduced-motion: reduce) {
   .grain,
   .animate-marquee,
+  .art-float,
+  .art-spin,
   .text-gradient,
   .bg-spectrum {
     animation: none;

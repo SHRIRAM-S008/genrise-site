@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
+import { RoadmapArt } from "@/components/art/Art";
 import { Eyebrow, SplitHeading } from "@/components/ui/Reveal";
 import { PROCESS, accent } from "@/lib/content";
 
@@ -19,6 +20,7 @@ export default function Process() {
             lines={["Simple.", "Transparent.", <span key="n" className="text-gradient pr-[0.08em] font-serif italic">No surprises.</span>]}
             className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-7xl"
           />
+          <RoadmapArt progress={scrollYProgress} className="mt-14 hidden w-full max-w-[300px] text-paper lg:block" />
         </div>
         <ol ref={ref} className="relative pl-10 md:pl-16">
           <div className="absolute left-[7px] top-2 h-full w-px bg-line md:left-[11px]" />

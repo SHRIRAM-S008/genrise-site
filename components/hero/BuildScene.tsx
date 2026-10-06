@@ -25,7 +25,7 @@ import { useEffect, useRef, useState } from "react";
  */
 const CYCLE = 16;
 const HOLD = 11.5; // frame shown when motion is reduced
-const START = -2.2; // wait for the preloader curtain
+const START = -2.7; // wait for the preloader curtain
 
 const W = 960;
 const H = 680;

@@ -7,7 +7,7 @@ import Magnetic from "@/components/ui/Magnetic";
 import { HERO_FACTS } from "@/lib/content";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
-const INTRO = 2.1; // starts as the preloader curtain lifts
+const INTRO = 2.6; // starts as the preloader curtain lifts
 
 function Line({ children, delay, className = "" }: { children: React.ReactNode; delay: number; className?: string }) {
   return (

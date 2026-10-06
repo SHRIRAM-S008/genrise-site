@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
+import { FaqArt } from "@/components/art/Art";
 import { Eyebrow, SplitHeading } from "@/components/ui/Reveal";
 import { FAQ } from "@/lib/content";
 
@@ -17,6 +18,7 @@ export default function Faq() {
             lines={["Questions,", <span key="a" className="text-gradient pr-[0.08em] font-serif italic">answered.</span>]}
             className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-7xl"
           />
+          <FaqArt className="mt-14 hidden w-full max-w-[320px] text-paper lg:block" />
         </div>
         <div className="border-t border-line">
           {FAQ.map((f, i) => {
