@@ -14,7 +14,7 @@ export default function Process() {
     <section id="process" className="relative px-4 py-32 md:px-8 md:py-48">
       <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1fr_1.3fr]">
         <div className="lg:sticky lg:top-32 lg:self-start">
-          <Eyebrow index="06">How we work</Eyebrow>
+          <Eyebrow index="03">How we work</Eyebrow>
           <SplitHeading
             lines={["Simple.", "Transparent.", <span key="n" className="text-gradient pr-[0.08em] font-serif italic">No surprises.</span>]}
             className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-7xl"

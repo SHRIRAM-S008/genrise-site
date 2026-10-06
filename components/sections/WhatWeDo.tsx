@@ -25,40 +25,49 @@ function PillarCard({
   ][i % 3];
 
   return (
-    <div className="sticky flex h-[78vh] items-start justify-center" style={{ top: `${96 + i * 28}px` }}>
+    <div className="sticky flex min-h-[78vh] items-start justify-center" style={{ top: `${96 + i * 28}px` }}>
       <motion.article
         style={{ scale }}
-        className={`relative flex h-[62vh] w-full origin-top flex-col justify-between overflow-hidden rounded-[2rem] p-8 md:p-14 ${accent}`}
+        className={`relative flex min-h-[62vh] w-full gap-10 origin-top flex-col justify-between overflow-hidden rounded-[2rem] p-8 md:p-14 ${accent}`}
       >
         <div className="flex items-start justify-between">
-          <span className="font-mono text-sm uppercase tracking-[0.2em] opacity-60">Pillar</span>
+          <span className="font-mono text-sm uppercase tracking-[0.2em] opacity-60">What we do</span>
           <span className="font-serif text-[22vw] leading-[0.7] opacity-90 md:text-[12rem]">{pillar.n}</span>
         </div>
         <div className="grid gap-6 md:grid-cols-[1fr_1fr] md:items-end">
           <h3 className="text-4xl font-medium leading-[0.95] tracking-[-0.04em] md:text-7xl">{pillar.title}</h3>
-          <p className="max-w-md text-lg leading-relaxed opacity-75 md:text-xl">{pillar.body}</p>
+          <div>
+            <p className="max-w-md text-lg leading-relaxed opacity-80 md:text-xl">{pillar.body}</p>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              {pillar.items.map((it) => (
+                <li key={it} className="rounded-full border border-current/25 px-3 py-1.5 text-xs font-medium md:text-sm">
+                  {it}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </motion.article>
     </div>
   );
 }
 
-export default function FreeFirst() {
+export default function WhatWeDo() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
 
   return (
-    <section id="promise" className="relative px-4 py-32 md:px-8">
+    <section id="what-we-do" className="relative px-4 py-32 md:px-8">
       <div className="mx-auto max-w-7xl">
-        <Eyebrow index="02">Our model</Eyebrow>
+        <Eyebrow index="01">What we do</Eyebrow>
         <div className="grid gap-10 md:grid-cols-2 md:items-end">
           <SplitHeading
-            lines={["The Free-First", <span key="p" className="text-gradient pr-[0.08em] font-serif italic">Promise.</span>]}
+            lines={["One team to", <span key="p" className="text-gradient pr-[0.08em] font-serif italic">build, grow &amp; scale.</span>]}
             className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-8xl"
           />
           <p className="max-w-md text-lg leading-relaxed text-paper/70">
-            If a tool costs us nothing to run, it costs you nothing to use. That&apos;s the rule. We design products to run in
-            your browser — no servers processing your files, no cloud bills piling up — so they can stay free.
+            Most businesses juggle a developer, a designer and a marketing agency. We&apos;re all three — so your product and
+            your growth plan are built together, by people who talk to each other.
           </p>
         </div>
         <div ref={ref} className="mt-20">

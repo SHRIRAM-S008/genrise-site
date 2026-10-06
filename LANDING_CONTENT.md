@@ -1,7 +1,8 @@
 # GenRise Tech — Landing Page Content Document
 
-> Working copy for the new landing page. Every section below is ready-to-use copy.
-> Final content — all team decisions applied. Chosen hero tagline: "Real software for real problems. Free for everyone."
+> **Positioning (updated 2026-10-06):** GenRise Tech is marketed first as a **digital marketing and software development company**.
+> GenRise Tools and the open-source work are a secondary "Our products / giving back" story, not the lead.
+> The live copy lives in `lib/content.ts`; sections 2–5 below are background for the products and community sections.
 
 ---
 
@@ -11,41 +12,44 @@
 |---|---|
 | Company name | GenRise Tech |
 | Domain | genrisetech.in |
-| First product | GenRise Tools — https://tools.genrisetech.in |
+| Category | Digital marketing & software development company |
+| Hero tagline | **We build software & grow brands. End to end.** |
+| Short pitch (1 line) | One team to build your product and grow your business online. |
+| Elevator pitch (3 lines) | GenRise Tech is a digital marketing and software development company. We design, build and launch websites, apps and SaaS products — then grow them with SEO, social media and performance marketing. We also ship free, open-source products like GenRise Tools, funded by our client work. |
+| In-house product | GenRise Tools — https://tools.genrisetech.in |
 | GitHub | https://github.com/SHRIRAM-S008/Genrise-tools |
-| Category | Software development + digital marketing startup with an open-source, free-first approach |
-| Signature line | **Generate your ideas. Rise together.** |
-| Short pitch (1 line) | We build the digital tools people usually pay for — and give them away free, in the open. |
-| Elevator pitch (3 lines) | GenRise Tech is a software and digital marketing studio that solves real-world problems with real software. We sell services to businesses, and use that work to fund products we release free to everyone. Much of what we build is open source, so any developer can see it, improve it, and help it grow. |
-
-### Tagline options (pick one for the hero)
-1. **Real software for real problems. Free for everyone.**
-2. **Built like a product. Shared like open source.**
-3. **The tools you'd pay for — free, open, and built in public.**
-4. **Generate ideas. Rise together.**
-5. **We build what the internet charges for — and give it back.**
 
 ---
 
 ## 1. Hero Section
 
-**Eyebrow:** Software · Digital Marketing · Open Source
+**Eyebrow:** Digital Marketing · Software Development · IT Consulting
 
-**Headline:** Real software for real problems. Free for everyone.
+**Headline:** We build software & grow *brands.* — End to end.
 
 **Sub-headline:**
-GenRise Tech builds digital products that others put behind paywalls — and releases them free.
-We fund this through our development and marketing services, and we build in the open so any developer can contribute.
+GenRise Tech is a digital marketing and software development company. We design, build and launch websites, apps and SaaS products — then grow them with SEO, social media and performance marketing.
 
-**Primary CTA:** Explore Our Free Tools → (tools.genrisetech.in)
-**Secondary CTA:** Work With Us
-**Tertiary link:** Contribute on GitHub
+**Primary CTA:** Start a Project → (#contact)
+**Secondary CTA:** Explore Services
 
-**Hero trust strip (only real numbers):**
-- 57+ free tools live
-- 0 files uploaded to our servers
-- 0 sign-ups, watermarks, or paywalls
-- 100% runs in your browser
+**Hero facts strip (all true, no invented numbers):**
+- 7 — core services, one team
+- 24h — reply to every enquiry
+- Free — first consultation
+- Global — clients welcome, remote-first
+
+**Marquee:** Web Development · SEO · SaaS Development · Social Media · UI/UX Design · Performance Ads · Custom Software · Content Marketing · IT Consulting · Information Security · Brand Strategy · Analytics
+
+---
+
+## 1b. What We Do — One team to build, grow & scale
+
+**Copy:** Most businesses juggle a developer, a designer and a marketing agency. We're all three — so your product and your growth plan are built together, by people who talk to each other.
+
+1. **Build** — Websites, web apps, SaaS and custom software — designed beautifully and engineered to scale. *(Web Development · SaaS Development · Custom Software · Web Design)*
+2. **Grow** — SEO, social media, content and performance ads that bring the right people to what we build — measured by real results, not vanity metrics. *(SEO · Social Media · Performance Ads · Content & Analytics)*
+3. **Scale & secure** — IT consulting, cloud and information security so your business stays fast, safe and ready for what's next. *(IT Consulting · Information Security · Cloud & Hosting · Ongoing Support)*
 
 ---
 
@@ -353,19 +357,18 @@ Replace them with real proof: GenRise Tools stats, GitHub stars/contributors, an
 
 ---
 
-## 17. Suggested Page Order
+## 17. Page Order (live)
 
-1. Navbar — Products · Services · Open Source · About · Contact · [Explore Free Tools]
-2. Hero
-3. Problem
-4. Free-First Promise
-5. Featured Product: GenRise Tools
-6. Open Source & Community
-7. Services
-8. How We Work
-9. Why GenRise
-10. Mission / Vision / Values
-11. FAQ
-12. Final CTA
-13. Contact
-14. Footer
+1. Navbar — Services · Process · Why Us · Products · FAQ · [theme toggle] · [Start a Project]
+2. Hero — We build software & grow brands
+3. Services marquee
+4. 01 What We Do — Build / Grow / Scale & secure
+5. 02 Services — 7 services + "Every project includes"
+6. 03 How We Work — 6-step process
+7. 04 Why GenRise — reasons, mission, vision, values
+8. 05 Our Products — GenRise Tools (Remotion film, highlights, kits)
+9. 06 Join the Team — open source, contributors, freelancers
+10. 07 FAQ — client questions first
+11. Final CTA — Build my product / Grow my business / Join the team
+12. 08 Contact — WhatsApp / email form
+13. Footer

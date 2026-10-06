@@ -8,7 +8,6 @@ const COLUMNS = [
     title: "Products",
     links: [
       { label: "GenRise Tools", href: SITE.toolsUrl },
-      { label: "Roadmap", href: "#about" },
       { label: "Request a Tool", href: `${SITE.github}/issues` },
     ],
   },
@@ -42,7 +41,7 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-[1.4fr_repeat(4,1fr)]">
           <div>
             <img src="/logo-white.png" alt="GenRise Tech" className="logo-theme h-10 w-auto" />
-            <p className="mt-6 max-w-xs text-mute">Real software for real problems — free and open for everyone.</p>
+            <p className="mt-6 max-w-xs text-mute">Digital marketing &amp; software development — we build software and grow brands.</p>
           </div>
           {COLUMNS.map((c) => (
             <div key={c.title}>

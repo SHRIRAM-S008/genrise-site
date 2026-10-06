@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Eyebrow, Reveal, SplitHeading } from "@/components/ui/Reveal";
 import { SITE } from "@/lib/content";
 
-const TOPICS = ["A service", "Contributing", "A tool request", "Something else"];
+const TOPICS = ["Software development", "Digital marketing", "Consulting / security", "Joining the team", "Something else"];
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -23,15 +23,15 @@ export default function Contact() {
     <section id="contact" className="relative px-4 py-32 md:px-8 md:py-48">
       <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2">
         <div className="min-w-0">
-          <Eyebrow index="09">Contact</Eyebrow>
+          <Eyebrow index="08">Contact</Eyebrow>
           <SplitHeading
             lines={["Let's", <span key="t" className="text-gradient pr-[0.08em] font-serif italic">talk.</span>]}
             className="text-6xl font-medium leading-[0.9] tracking-[-0.05em] md:text-[9rem]"
           />
           <Reveal>
             <p className="mt-8 max-w-md text-lg leading-relaxed text-paper/70">
-              Have a project, an idea for a free tool, or want to join as a contributor? Send us a message — we reply within
-              24 hours.
+              Need a website, an app or a marketing plan that actually grows your business? Tell us about it — the first
+              consultation is free and we reply within 24 hours.
             </p>
             <dl className="mt-12 space-y-6">
               {[

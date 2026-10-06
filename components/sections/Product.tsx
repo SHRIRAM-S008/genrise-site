@@ -65,16 +65,17 @@ export default function Product() {
   return (
     <section id="product" className="relative px-4 py-32 md:px-8 md:py-48">
       <div className="mx-auto max-w-7xl">
-        <Eyebrow index="03">Featured product</Eyebrow>
+        <Eyebrow index="05">Our products</Eyebrow>
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr] md:items-end">
           <SplitHeading
-            lines={["GenRise Tools.", <span key="s" className="font-serif italic text-mute">57+ tools, all in your browser.</span>]}
+            lines={["We also build", <span key="s" className="text-gradient pr-[0.08em] font-serif italic">for everyone.</span>]}
             className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-8xl"
           />
           <Reveal>
             <p className="text-lg leading-relaxed text-paper/70">
-              Our proof that the free-first model works. Every tool runs 100% on your device using Canvas, WebAssembly and
-              modern File APIs. No uploads, no accounts, no limits.
+              <strong className="font-medium text-paper">GenRise Tools</strong> is our in-house product — 57+ free,
+              privacy-first tools for images, PDFs and documents that run entirely in your browser. It&apos;s how we build
+              for clients: fast, secure and user-first. Client work funds it, so it stays free.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Magnetic href={SITE.toolsUrl} external cursor="Open">

@@ -57,16 +57,16 @@ export default function Services() {
   return (
     <section id="services" className="relative">
       <div className="mx-auto max-w-7xl px-4 pt-32 md:px-8 md:pt-48">
-        <Eyebrow index="05">Services</Eyebrow>
+        <Eyebrow index="02">Services</Eyebrow>
         <div className="grid gap-10 md:grid-cols-2 md:items-end">
           <SplitHeading
-            lines={["Services that fund", <span key="f" className="text-gradient pr-[0.08em] font-serif italic">the free stuff.</span>]}
+            lines={["Services built", <span key="f" className="text-gradient pr-[0.08em] font-serif italic">around your growth.</span>]}
             className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-8xl"
           />
           <Reveal>
             <p className="max-w-md text-lg leading-relaxed text-paper/70">
-              Hire GenRise Tech for your next project — and help keep public tools free for everyone. We work with clients
-              worldwide.
+              From the first line of code to your first thousand customers — software, design, marketing and security under
+              one roof. We work with clients worldwide.
             </p>
           </Reveal>
         </div>

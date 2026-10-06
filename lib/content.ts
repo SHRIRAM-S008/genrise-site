@@ -7,68 +7,59 @@ export const SITE = {
   email: "shriram0783@gmail.com",
   phoneDisplay: "+91 63839 43039",
   whatsapp: "https://wa.me/916383943039",
-  tagline: "Real software for real problems. Free for everyone.",
+  tagline: "We build software & grow brands.",
   description:
-    "GenRise Tech builds free, privacy-first digital tools and offers software development, SaaS, web design, information security and digital marketing services. Open source and community-driven.",
+    "GenRise Tech is a digital marketing and software development company. We design, build and launch websites, web apps and SaaS products — then grow them with SEO, social media and performance marketing.",
 };
 
 export const NAV = [
-  { label: "Product", href: "#product" },
-  { label: "Open Source", href: "#open-source" },
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
+  { label: "Why Us", href: "#about" },
+  { label: "Products", href: "#product" },
   { label: "FAQ", href: "#faq" },
 ];
 
-export const HERO_STATS = [
-  { value: 57, suffix: "+", label: "free tools live" },
-  { value: 0, suffix: "", label: "files uploaded to our servers" },
-  { value: 0, suffix: "", label: "sign-ups, watermarks or paywalls" },
-  { value: 100, suffix: "%", label: "runs in your browser" },
+export const HERO_FACTS = [
+  { value: "7", label: "core services, one team" },
+  { value: "24h", label: "reply to every enquiry" },
+  { value: "Free", label: "first consultation" },
+  { value: "Global", label: "clients welcome, remote-first" },
 ];
 
 export const MARQUEE = [
-  "Compress Image",
-  "Passport Photo Maker",
-  "Merge PDF",
-  "Background Remover",
-  "Invoice Generator",
-  "QR Code Generator",
-  "OCR Text Extractor",
-  "UploadReady",
-  "Split PDF",
-  "Password Generator",
-  "GPA Calculator",
-  "Image to PDF",
+  "Web Development",
+  "SEO",
+  "SaaS Development",
+  "Social Media",
+  "UI/UX Design",
+  "Performance Ads",
+  "Custom Software",
+  "Content Marketing",
+  "IT Consulting",
+  "Information Security",
+  "Brand Strategy",
+  "Analytics",
 ];
-
-export const PROBLEM = {
-  statement:
-    "Compressing a photo for an exam form. Merging two PDFs. Making a passport photo. These are ten-second jobs — yet the internet charges for them, watermarks them, or quietly uploads your private files.",
-  paywalls: [
-    { title: "Monthly subscription", detail: "for a 10-second job" },
-    { title: "Watermark", detail: "until you pay up" },
-    { title: "Create an account", detail: "just to download" },
-    { title: "Upload your files", detail: "to a server you don't know" },
-  ],
-  closing: "We think that's backwards. So we're fixing it, one tool at a time.",
-};
 
 export const PILLARS = [
   {
     n: "01",
-    title: "Free by default",
-    body: "If it doesn't cost us money to run, it stays free. No trials, no “pro” tier for basic features, no watermarks.",
+    title: "Build",
+    body: "Websites, web apps, SaaS and custom software — designed beautifully and engineered to scale.",
+    items: ["Web Development", "SaaS Development", "Custom Software", "Web Design"],
   },
   {
     n: "02",
-    title: "Funded by services, not by you",
-    body: "Our client work — software, SaaS, web design and digital marketing — pays for the free products. Every business that hires us keeps public tools free for everyone.",
+    title: "Grow",
+    body: "SEO, social media, content and performance ads that bring the right people to what we build — measured by real results, not vanity metrics.",
+    items: ["SEO", "Social Media", "Performance Ads", "Content & Analytics"],
   },
   {
     n: "03",
-    title: "Fair limits when it costs us",
-    body: "Products that need servers or AI compute get a free plan with usage limits and simple paid plans for those who need more. Light users stay free; heavy users help cover the running cost.",
+    title: "Scale & secure",
+    body: "IT consulting, cloud and information security so your business stays fast, safe and ready for what's next.",
+    items: ["IT Consulting", "Information Security", "Cloud & Hosting", "Ongoing Support"],
   },
 ];
 
@@ -174,66 +165,55 @@ export const PROCESS = [
 ];
 
 export const WHY = [
-  { title: "Real products, not pitches", body: "Our own tools are live and used every day." },
-  { title: "Privacy-first engineering", body: "If it can run on the device, it does." },
-  { title: "Builders + marketers", body: "We build it and help people find it." },
+  { title: "Builders + marketers", body: "We build your product and help people find it — one team, one plan." },
   { title: "Startup speed, honest pricing", body: "Small team, quick decisions, transparent quotes." },
-  { title: "Your project does good", body: "Every client helps keep public tools free." },
+  { title: "Real products, not pitches", body: "We ship our own products too — they're live and used every day." },
+  { title: "Security built in", body: "Privacy-first engineering on every project we deliver." },
+  { title: "Your project does good", body: "Client work funds free tools for everyone." },
 ];
 
 export const MISSION =
-  "To solve real-world problems with high-quality digital products — and make them free and open for everyone who needs them.";
+  "To help businesses build reliable software and grow online — with honest pricing, clear communication and work we're proud of.";
 export const VISION =
-  "A world where essential digital tools aren't locked behind paywalls, and where any developer, anywhere, can help build them.";
+  "To be the digital partner growing businesses trust — and to give back with free tools and open-source work anyone can use.";
 
 export const VALUES = [
-  { title: "Free first", body: "If it doesn't cost us, it doesn't cost you." },
-  { title: "Open by default", body: "We share our code, our process and our learnings." },
+  { title: "Honest pricing", body: "Clear quotes. No hidden costs." },
+  { title: "Results over noise", body: "We measure growth, not vanity metrics." },
   { title: "Privacy is the baseline", body: "Not a feature. Not an upsell." },
-  { title: "Build for real people", body: "Students, job seekers, small businesses, everyone." },
+  { title: "Open by default", body: "We share our code, our process and our learnings." },
   { title: "Community over ego", body: "The best ideas can come from anyone." },
   { title: "Quality matters", body: "Free never means cheap." },
 ];
 
-export const ROADMAP = [
-  "More tools in GenRise Tools — vote on GitHub",
-  "New free products, picked from problems our community reports",
-  "An open contributor program for real project experience",
-  "A public roadmap anyone can comment on",
-];
-
 export const FAQ = [
+  {
+    q: "What services does GenRise Tech offer?",
+    a: "Software development (websites, web apps, SaaS and custom software), digital marketing (SEO, social media, content and performance ads), web design, IT consulting and information security.",
+  },
+  {
+    q: "How much does a project cost?",
+    a: "It depends on scope. Every project starts with a free consultation, then you get a clear scope, timeline and quote — no hidden costs.",
+  },
+  {
+    q: "Can you both build and market my product?",
+    a: "Yes — that's what makes us different. One team builds your website or app and runs the marketing that brings people to it, so both are planned together.",
+  },
+  {
+    q: "Do you work with clients outside India?",
+    a: "Yes. We work with clients worldwide and collaborate remotely across time zones.",
+  },
   {
     q: "Is GenRise Tools really free?",
     a: "Yes. No sign-up, no watermarks, no limits. The tools run in your browser, so they cost us almost nothing to operate — and we keep it that way.",
-  },
-  {
-    q: "How do you make money?",
-    a: "Through our services — software development, SaaS builds, web design, security and digital marketing for businesses. That revenue funds our free products.",
-  },
-  {
-    q: "Will you ever charge for tools?",
-    a: "Not for tools that cost us nothing to run. If a future product needs paid servers or AI compute, it will have a free plan with usage limits, plus paid plans for people who need more.",
   },
   {
     q: "Are my files safe?",
     a: "Yes. GenRise Tools processes everything locally in your browser. Your files are never uploaded to our servers.",
   },
   {
-    q: "Is your code open source?",
-    a: "Many of our products are. GenRise Tools is on GitHub, and anyone can contribute.",
-  },
-  {
-    q: "I'm a beginner. Can I still contribute?",
-    a: "Absolutely. Look for issues labelled good first issue, or help with docs, design or testing.",
-  },
-  {
     q: "I want project experience. Can I join a project?",
     a: "Yes. Our open-source products are open to anyone who wants real project experience. When we take on client work, we bring in freelancers from our contributor community alongside our core team.",
-  },
-  {
-    q: "Do you work with clients outside India?",
-    a: "Yes. We work with clients worldwide and collaborate remotely across time zones.",
   },
 ];
 

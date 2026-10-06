@@ -10,11 +10,10 @@ import Hero from "@/components/sections/Hero";
 import Marquee from "@/components/sections/Marquee";
 import Nav from "@/components/sections/Nav";
 import OpenSource from "@/components/sections/OpenSource";
-import Problem from "@/components/sections/Problem";
 import Process from "@/components/sections/Process";
 import Product from "@/components/sections/Product";
-import FreeFirst from "@/components/sections/FreeFirst";
 import Services from "@/components/sections/Services";
+import WhatWeDo from "@/components/sections/WhatWeDo";
 import { FAQ } from "@/lib/content";
 
 const faqJsonLd = {
@@ -37,13 +36,12 @@ export default function Home() {
       <main>
         <Hero />
         <Marquee />
-        <Problem />
-        <FreeFirst />
-        <Product />
-        <OpenSource />
+        <WhatWeDo />
         <Services />
         <Process />
         <About />
+        <Product />
+        <OpenSource />
         <Faq />
         <FinalCta />
         <Contact />

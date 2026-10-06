@@ -15,23 +15,23 @@ const instrument = Instrument_Serif({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: "GenRise Tech — Free Open-Source Tools, Software Development & Digital Marketing",
+  title: "GenRise Tech — Digital Marketing & Software Development Company",
   description: SITE.description,
   keywords: [
-    "free online tools",
-    "browser-based tools",
-    "open source tools India",
+    "digital marketing agency",
     "software development company",
+    "SEO services",
+    "social media marketing",
     "SaaS development",
     "web design",
     "web development",
-    "digital marketing agency",
     "IT consulting",
     "information security",
   ],
   openGraph: {
-    title: "GenRise Tech — The tools you'd pay for, free and open",
-    description: "Free browser-based tools, open-source products, and software & marketing services for businesses.",
+    title: "GenRise Tech — We build software & grow brands",
+    description:
+      "Digital marketing and software development company: websites, web apps, SaaS, SEO, social media and performance marketing.",
     url: SITE.url,
     siteName: SITE.name,
     type: "website",

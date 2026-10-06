@@ -2,9 +2,8 @@
 
 import { motion, useMotionTemplate, useMotionValue, useScroll, useSpring, useTransform } from "motion/react";
 import { useRef } from "react";
-import Counter from "@/components/ui/Counter";
 import Magnetic from "@/components/ui/Magnetic";
-import { HERO_STATS, SITE } from "@/lib/content";
+import { HERO_FACTS } from "@/lib/content";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 const INTRO = 2.1; // starts as the preloader curtain lifts
@@ -95,16 +94,16 @@ export default function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-volt opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-volt" />
           </span>
-          <span>Software · Digital Marketing · Open Source</span>
+          <span>Digital Marketing · Software Development · IT Consulting</span>
         </motion.div>
 
         <h1 className="text-[13vw] font-medium leading-[0.88] tracking-[-0.05em] md:text-[9.5vw] xl:text-[8.6rem]">
-          <Line delay={0}>Real software</Line>
+          <Line delay={0}>We build software</Line>
           <Line delay={0.08}>
-            for real <span className="text-gradient pr-[0.08em] font-serif font-normal italic tracking-[-0.02em]">problems.</span>
+            &amp; grow <span className="text-gradient pr-[0.08em] font-serif font-normal italic tracking-[-0.02em]">brands.</span>
           </Line>
           <Line delay={0.16} className="text-outline">
-            Free for everyone.
+            End to end.
           </Line>
         </h1>
 
@@ -115,8 +114,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: INTRO + 0.5, duration: 1, ease: EASE }}
           >
-            GenRise Tech builds the digital products others put behind paywalls — and releases them free. Our services fund
-            it, and we build in the open so any developer can contribute.
+            GenRise Tech is a digital marketing and software development company. We design, build and launch websites,
+            apps and SaaS products — then grow them with SEO, social media and performance marketing.
           </motion.p>
           <motion.div
             className="flex flex-wrap gap-3 md:justify-end"
@@ -124,11 +123,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: INTRO + 0.65, duration: 1, ease: EASE }}
           >
-            <Magnetic href={SITE.toolsUrl} external cursor="Open">
-              Explore Free Tools <span aria-hidden>↗</span>
+            <Magnetic href="#contact" cursor="Let's go">
+              Start a Project <span aria-hidden>→</span>
             </Magnetic>
-            <Magnetic href="#contact" variant="ghost">
-              Work With Us
+            <Magnetic href="#services" variant="ghost">
+              Explore Services
             </Magnetic>
           </motion.div>
         </div>
@@ -139,14 +138,18 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: INTRO + 0.8, duration: 1 }}
         >
-          {HERO_STATS.map((s, i) => (
-            <div key={s.label} className="py-3 pr-4">
-              <dt className="sr-only">{s.label}</dt>
-              <dd className="font-serif text-5xl md:text-6xl">
-                <Counter to={s.value} suffix={s.suffix} delay={INTRO + 0.8 + i * 0.1} />
-              </dd>
-              <dd className="mt-2 text-sm text-mute">{s.label}</dd>
-            </div>
+          {HERO_FACTS.map((f, i) => (
+            <motion.div
+              key={f.label}
+              className="py-3 pr-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: INTRO + 0.8 + i * 0.1, duration: 0.9, ease: EASE }}
+            >
+              <dt className="sr-only">{f.label}</dt>
+              <dd className="font-serif text-5xl md:text-6xl">{f.value}</dd>
+              <dd className="mt-2 text-sm text-mute">{f.label}</dd>
+            </motion.div>
           ))}
         </motion.dl>
       </motion.div>

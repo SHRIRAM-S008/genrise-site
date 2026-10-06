@@ -67,7 +67,7 @@ export default function OpenSource() {
     <section id="open-source" className="relative overflow-hidden px-4 py-32 md:px-8 md:py-48">
       <div className="bg-grid absolute inset-0 opacity-50 [mask-image:linear-gradient(to_bottom,transparent,black_30%,black_70%,transparent)]" />
       <div className="relative mx-auto max-w-7xl">
-        <Eyebrow index="04">Open source &amp; community</Eyebrow>
+        <Eyebrow index="06">Join the team</Eyebrow>
         <SplitHeading
           lines={["Built in the open.", <span key="b" className="text-gradient pr-[0.08em] font-serif italic">Built by everyone.</span>]}
           className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-8xl"

@@ -12,7 +12,7 @@ export default function Faq() {
     <section id="faq" className="relative px-4 py-32 md:px-8 md:py-48">
       <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1fr_1.5fr]">
         <div>
-          <Eyebrow index="08">FAQ</Eyebrow>
+          <Eyebrow index="07">FAQ</Eyebrow>
           <SplitHeading
             lines={["Questions,", <span key="a" className="text-gradient pr-[0.08em] font-serif italic">answered.</span>]}
             className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-7xl"

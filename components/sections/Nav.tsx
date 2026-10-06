@@ -3,7 +3,7 @@
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
-import { NAV, SITE } from "@/lib/content";
+import { NAV } from "@/lib/content";
 
 export default function Nav() {
   const { scrollY } = useScroll();
@@ -46,12 +46,10 @@ export default function Nav() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
             <a
-              href={SITE.toolsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="hidden rounded-full bg-volt px-5 py-2.5 text-sm font-medium text-ink transition-transform hover:scale-105 sm:inline-block"
             >
-              Explore Free Tools
+              Start a Project
             </a>
             <button
               onClick={() => setOpen((o) => !o)}
@@ -88,8 +86,12 @@ export default function Nav() {
                 {n.label}
               </motion.a>
             ))}
-            <a href={SITE.toolsUrl} className="mt-8 rounded-full bg-volt py-4 text-center font-medium text-ink">
-              Explore Free Tools
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className="mt-8 rounded-full bg-volt py-4 text-center font-medium text-ink"
+            >
+              Start a Project
             </a>
           </motion.div>
         )}

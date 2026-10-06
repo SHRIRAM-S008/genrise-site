@@ -2,13 +2,13 @@
 
 import { motion } from "motion/react";
 import { Eyebrow, Reveal, SplitHeading } from "@/components/ui/Reveal";
-import { MISSION, ROADMAP, SITE, VALUES, VISION, WHY, accent } from "@/lib/content";
+import { MISSION, VALUES, VISION, WHY, accent } from "@/lib/content";
 
 export default function About() {
   return (
     <section id="about" className="relative px-4 py-32 md:px-8 md:py-48">
       <div className="mx-auto max-w-7xl">
-        <Eyebrow index="07">Why GenRise</Eyebrow>
+        <Eyebrow index="04">Why GenRise</Eyebrow>
         <SplitHeading
           lines={["Why teams", <span key="c" className="font-serif italic text-mute">choose GenRise.</span>]}
           className="text-5xl font-medium leading-[0.95] tracking-[-0.04em] md:text-8xl"
@@ -58,30 +58,6 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-32 grid gap-12 rounded-[2rem] border border-line p-8 md:grid-cols-[1fr_1.4fr] md:p-14">
-          <div>
-            <div className="font-mono text-xs uppercase tracking-[0.2em] text-volt">Roadmap</div>
-            <h3 className="mt-6 text-4xl font-medium tracking-[-0.03em] md:text-5xl">
-              What we&apos;re <span className="font-serif italic">building next.</span>
-            </h3>
-            <a
-              href={`${SITE.github}/issues`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-block border-b border-volt pb-1 pt-3 text-volt"
-            >
-              Suggest a tool →
-            </a>
-          </div>
-          <ul className="divide-y divide-line">
-            {ROADMAP.map((r, i) => (
-              <Reveal key={r} delay={i * 0.06} className="flex items-baseline gap-5 py-5">
-                <span className="font-mono text-xs text-mute">0{i + 1}</span>
-                <span className="text-lg">{r}</span>
-              </Reveal>
-            ))}
-          </ul>
-        </div>
       </div>
     </section>
   );

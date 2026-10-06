@@ -6,9 +6,9 @@ import { SplitHeading } from "@/components/ui/Reveal";
 import { SITE } from "@/lib/content";
 
 const PATHS = [
-  { want: "Use free tools", cta: "Open GenRise Tools", href: SITE.toolsUrl, external: true },
-  { want: "Hire GenRise", cta: "Start a Project", href: "#contact", external: false },
-  { want: "Contribute code", cta: "Join on GitHub", href: SITE.github, external: true },
+  { want: "Build my product", cta: "Start a Project", href: "#contact", external: false },
+  { want: "Grow my business", cta: "Plan my marketing", href: "#contact", external: false },
+  { want: "Join the team", cta: "Contribute on GitHub", href: SITE.github, external: true },
 ];
 
 export default function FinalCta() {
@@ -32,8 +32,7 @@ export default function FinalCta() {
           className="text-6xl font-medium leading-[0.9] tracking-[-0.05em] md:text-[9rem]"
         />
         <p className="mt-10 max-w-xl text-lg leading-relaxed text-[var(--brand-ink)]/70">
-          Whether you need a product built, want to grow your business online, or want to contribute to tools real people use
-          every day — there&apos;s a place for you at GenRise.
+          Whether you need software built, a brand grown online, or both — GenRise is the one team for the whole journey.
         </p>
         <div className="mt-16 grid gap-4 md:grid-cols-3">
           {PATHS.map((p, i) => (
