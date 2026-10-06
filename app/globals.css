@@ -187,6 +187,12 @@ html.lenis body {
   background-size: 72px 72px;
 }
 
+/* Hero: dot grid */
+.bg-dots {
+  background-image: radial-gradient(color-mix(in oklab, var(--fg) 22%, transparent) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }

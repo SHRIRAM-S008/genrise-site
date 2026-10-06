@@ -14,18 +14,10 @@ const PATHS = [
 export default function FinalCta() {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const rotate = useTransform(scrollYProgress, [0, 1], [-30, 30]);
   const clip = useTransform(scrollYProgress, [0, 0.4], ["inset(12% 6% 12% 6% round 48px)", "inset(0% 0% 0% 0% round 0px)"]);
 
   return (
     <motion.section ref={ref} style={{ clipPath: clip }} className="bg-spectrum relative overflow-hidden px-4 py-32 text-[var(--brand-ink)] md:px-8 md:py-48">
-      <motion.img
-        src="/logo-black.png"
-        alt=""
-        aria-hidden
-        style={{ rotate }}
-        className="pointer-events-none absolute -bottom-20 -right-20 w-[60vw] max-w-[900px] opacity-[0.07]"
-      />
       <div className="relative mx-auto max-w-7xl">
         <SplitHeading
           lines={["Build something", <span key="m" className="font-serif italic">that matters —</span>, "with us."]}
